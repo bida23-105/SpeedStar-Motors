@@ -1,65 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <header>
-  <img src="Image.jfif>
- </header>
- <title>Warner Bros.</title>
- <style>
-   body {
-     font-family: Arial, sans-serif;
-     margin: 0;
-     padding: 0;
-   }
-
-   header {
-     background-color: #007bff;
-     color: #fff;
-     padding: 20px;
-   }
-
-   nav ul {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-   }
-
-   nav li {
-     display: inline-block;
-     margin-right: 20px;
-   }
-
-   a {
-     color: #fff;
-     text-decoration: none;
-   }
-
-   main {
-     padding: 20px;
-   }
- </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warner Bros.</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header>
-   <h1>Warner Bros.</h1>
-   <nav>
-     <ul>
-       <li><a href="movies.html">Movies</a></li>
-       <li><a href="tvshows.html">TV Shows</a></li>
-       <li><a href="games.html">Games & Apps</a></li>
-       <li><a href="collections.html">Collections</a></li>
-       <li><a href="contact.html">Contact</a></li>
-     </ul>
-   </nav>
- </header>
-
- <main>
-   </main>
-
- <footer>
-   <p>&copy; Warner Bros. All rights reserved.</p>
- </footer>
+<header>
+<h1 class="logo">Warner Bros.</h1>
+<nav>
+<ul>
+<li><a href="movies.html">Movies</a></li>
+<li><a href="tvshows.html">TV Shows</a></li>
+<li><a href="games.html">Games & Apps</a></li>
+<li><a href="collections.html">Collections</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="slideshow-container">
+<div class="mySlides">
+<img src="image1.jpg" alt="Warner Bros. image 1">
+<div class="caption">Caption 1</div>
+</div>
+<div class="mySlides">
+<img src="image2.jpg" alt="Warner Bros. image 2">
+<div class="caption">Caption 2</div>
+</div>
+<div class="mySlides">
+<img src="image3.jpg" alt="Warner Bros. image 3">
+<div class="caption">Caption 3</div>
+</div>
+<a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+<a class="next" onclick="plusDivs(1)">&#10095;</a>
+</section>
+<section class="about-us">
+<h2>About Warner Bros.</h2>
+<p>Introduce Warner Bros. here. Briefly explain its history, achievements, and the kind of content it produces (movies, TV shows, games, etc.).</p>
+</section>
+<section class="upcoming">
+<h2>Upcoming Releases</h2>
+<div class="movie-card">
+<img src="movie1.jpg" alt="Upcoming movie 1">
+<h3>Movie Title 1</h3>
+<p>Brief description of the movie</p>
+</div>
+<div class="movie-card">
+<img src="movie2.jpg" alt="Upcoming movie 2">
+<h3>Movie Title 2</h3>
+<p>Brief description of the movie</p>
+</div>
+</section>
+<section class="social-media">
+<h2>Follow Us</h2>
+<a href="https://www.facebook.com/warnerbros/"><img src="facebook.png" alt="Facebook"></a>
+<a href="https://twitter.com/warnerbros"><img src="twitter.png" alt="Twitter"></a>
+<a href="https://www.instagram.com/warnerbros/"><img src="instagram.png" alt="Instagram"></a>
+</section>
+</main>
+<footer>
+<p>&copy; Warner Bros. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
+style.css (Basic styling):
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+header {
+ background-color: #007bff;
+ color: #fff;
+ padding: 20px;
+}
+.logo {
+ font-size: 2em; /* Adjust logo font size */
+}
+nav ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+nav li {
+ display: inline-block;
+ margin-right: 20px;
+}
+a {
+ color: #fff;
+ text
