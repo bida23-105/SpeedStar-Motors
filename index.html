@@ -1,158 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Warner Bros.</title>
- <style>
-  <section class="slideshow">
- <div class="slideshow-container">
-   <div class="mySlides">
-     <img src="Joker(slideshow)" alt="Joker(slideshow)">
-   </div>
-   <div class="mySlides">
-     <img src="godzila(slideshow)" alt="godzila(slideshow)">
-   </div>
-   <div class="mySlides">
-     <img src="Starwars(slideshow)" alt="Starwars(slideshow)">
-   </div>
-   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-   <a class="next" onclick="plusSlides(1)">&#10095;</a>
- </div>
-  <div style="text-align:center">
-   <span class="dot" onclick="currentSlide(1)"></span>
-   <span class="dot" onclick="currentSlide(2)"></span>
-   <span class="dot" onclick="currentSlide(3)"></span>
- </div>
-</section>
-slideshow {
- margin: 20px auto;
- width: 600px; /* Adjust width as needed */
- position: relative;}
-
-.slideshow-container {display: flex;
- overflow: hidden;}
-
-.mySlides {display: none;
- fadein 0.5s ease-in-out; 
-.mySlides img {
- width: 100%;
- height: auto;}
-
-.prev, .next { cursor: pointer;
- position: absolute;
- top: 50%;
- width: auto;
- padding: 16px;
- color: white;
- font-weight: bold;
- font-size: 18px;
- transition: 0.6s ease;
- opacity: 0.8;
- z-index: 1;}
-
-.prev:hover,.next:hover {background-color: #ddd;}
-
-.prev {left: 0;
- border-radius: 0 3px 3px 0;}
-
-.next {right: 0;
- border-radius: 3px 0 0 3px;}
-
-.dot {cursor: pointer;
- height: 15px;
- width: 15px;
- margin: 0 2px;
- background-color: #bbb;
- border-radius: 50%;
- display: inline-block;
- transition: background-color 0.6s ease;}
-
-.dot:hover {background-color: #717171;}
-
-.active, .dot:active {background-color: #fff;}
-
-
- animation-name: fadein;}
-
-@keyframes fadein {
- from {opacity: 0;}
- to {opacity: 1;}
-}
-   body {font-family: sans-serif;
-     margin: 0;
-     padding: 0;}
-
-   header{background-color: #000;
-     color: #fff;
-     padding: 10px 20px;}
-
-   nav{display: flex;
-     justify-content: space-between;}
-
-   nav ul{list-style: none;
-     padding: 0;
-     margin: 0;}
-
-   nav li{display: inline-block;
-     margin-right: 20px;}
-
-   .banner {height: 300px;
-     background-color: black;}
-
-  .social-media {padding: 20px;
-     text-align: center;}
-
-   footer {background-color: #000;
-     color: #fff;
-     padding: 10px;
-     text-align: center;}
- </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warner Bros.</title>
+  <style>
+    body {background-color: white;}
+   
+  body {font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;}
+ 
+header {background-color: #000;
+color: #fff;
+padding: 20px;}
+ 
+h1 {font-size: 2em;
+margin-bottom: 0;}
+ 
+nav ul {list-style: none;
+padding: 0;
+margin: 0;}
+ 
+nav li {display: inline-block;
+margin-right: 20px;}
+ 
+a {color: #fff;
+text-decoration: none;}
+ 
+.about-us, .upcoming, .social-media {padding: 20px;}
+ 
+h2 {font-size: 1.5em;
+margin-bottom: 10px;}
+ 
+.movie-card {display: inline-block;
+margin-right: 20px;
+width: 200px;}
+ 
+.social-media img { width: 30px;
+margin-right: 10px;}
+ 
+footer {background-color: #000;
+color: #fff;
+text-align: center;
+padding: 10px:}
+    ul {list-style-type: none;
+  margin: 0;
+  padding: 0;}
+ 
+li a {display: block;
+  width: 60px;
+  background-color: #dddddd;}
 </head>
 <body>
- <header>
-   <nav>
-     <ul>
-       <li><a href="#">Movies</a></li>
-       <li><a href="#">TV Shows</a></li>
-       <li><a href="#">Games & Apps</a></li>
-       <li><a href="#">Contact</a></li>
-     </ul>
-   </nav>
- </header>
-
- <main>
-   <section class="banner">
-     </section>
-
-   <section class="slideshow">
-     </section>
-
-   <section class="about-us">
-     <h2>About Warner Bros.</h2>
-     <p>A brief description of Warner Bros.' history and mission.</p>
-   </section>
-
-   <section class="upcoming-movies">
-     <h2>Upcoming Movies</h2>
-     <div class="movie-grid">
-       </div>
-   </section>
-
-   <section class="social-media">
-     <h3>Follow Us</h3>
-     <ul>
-       <li><a href="#">Facebook</a></li>
-       <li><a href="#">Twitter</a></li>
-       <li><a href="#">Instagram</a></li>
-     </ul>
-   </section>
- </main>
-
- <footer>
-   <p>&copy; Warner Bros. 2024</p>
- </footer>
+<header>
+<h1 class="logo">Warner Bros.</h1>
+<nav>
+<ul>
+<li><a href="movies.html">Movies</a></li>
+<li><a href="tvshows.html">TV Shows</a></li>
+<li><a href="games.html">Games & Apps</a></li>
+<li><a href="collections.html">Collections</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="slideshow-container">
+<div class="mySlides">
+<img src="image1.jpg" alt="Warner Bros. image 1">
+<div class="caption">Caption 1</div>
+</div>
+<div class="mySlides">
+<img src="image2.jpg" alt="Warner Bros. image 2">
+<div class="caption">Caption 2</div>
+</div>
+<div class="mySlides">
+<img src="image3.jpg" alt="Warner Bros. image 3">
+<div class="caption">Caption 3</div>
+</div>
+<a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+<a class="next" onclick="plusDivs(1)">&#10095;</a>
+</section>
+<section class="about-us">
+<h2>About Warner Bros.</h2>
+<p>Warner Bros A Power house in entertainment,has captivated audiences worldwide with beloved characters and block buster movies.</p>
+</section>
+<section class="upcoming">
+<h2>Upcoming Releases</h2>
+<div class="movie-card">
+<img src="movie1.jpg" alt="Upcoming movie 1">
+<h3>Movie Title 1</h3>
+<p>Brief description of the movie</p>
+</div>
+<div class="movie-card">
+<img src="movie2.jpg" alt="Upcoming movie 2">
+<h3>Movie Title 2</h3>
+<p>Brief description of the movie</p>
+</div>
+</section>
+<section class="social-media">
+<h2>Follow Us</h2>
+<a href="https://www.facebook.com/warnerbros/"><img src="facebook.png" alt="Facebook"></a>
+<a href="https://twitter.com/warnerbros"><img src="twitter.png" alt="Twitter"></a>
+<a href="https://www.instagram.com/warnerbros/"><img src="instagram.png" alt="Instagram"></a>
+</section>
+</main>
+<footer>
+<p>&copy; Warner Bros. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
-</html>
-
-
+</html>”
