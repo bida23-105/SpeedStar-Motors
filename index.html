@@ -1,97 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Warner Bros.</title>
-<style>
- body {background-color: white;
-   margin: 0;
-   padding: 0;}
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Warner Bros.</title>
+ <style>
+   body {
+     font-family: sans-serif;
+     margin: 0;
+     padding: 0;
+   }
 
- header {background-color: #000;
-   color: #fff;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px;}
- .logo {font-size: 2em;}
+   header {
+     background-color: #000;
+     color: #fff;
+     padding: 10px 20px;
+   }
 
- nav {display: flex;}
+   nav {
+     display: flex;
+     justify-content: space-between;
+   }
 
- nav li {margin-right: 20px;}
+   nav ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+   }
 
- a {color: #fff;
-   text-decoration: none;}
+   nav li {
+     display: inline-block;
+     margin-right: 20px;
+   }
 
- .about-us, .upcoming, .social-media {padding: 20px;}
+   .banner {
+     height: 300px;
+     background-color: black;
+   }
 
- h2 {font-size: 1.5em;
-   margin-bottom: 10px;}
+   .slideshow {
+     /* Styles for slideshow implementation */
+   }
 
- .movie-card {display: inline-block;
-   margin-right: 20px;
-   width: 200px;}
+   .about-us {
+     padding: 20px;
+     text-align: center;
+   }
 
- .social-media img {width: 30px;
-   margin-right: 10px;}
+   .upcoming-movies {
+     padding: 20px;
+   }
 
- footer {background-color: #000;
-   color: #fff;
-   text-align: center;
-   padding: 10px;}
- .main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
+   .upcoming-movies h2 {
+     text-align: center;
+   }
 
- .slideshow-container {
-   /* styles for slideshow */}
+   .movie-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+     /* Styles for movie image & description positioning */
+   }
 
- .about-us {
-   /* styles for about us section */
- }
+   .social-media {
+     padding: 20px;
+     text-align: center;
+   }
 
- .upcoming {
-   margin-top: 20px; /* move upcoming section below about us */
- }
-
- .movie-card {
-   margin-bottom: 20px; /* add space between movie cards */
- }
-</style>
+   footer {
+     background-color: #000;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+   }
+ </style>
 </head>
 <body>
-<header>
- <h1 class="logo">Warner Bros.</h1>
- <nav>
-   <ul>
-     <li><a href="movies.html">Movies</a></li>
-     <li><a href="tvshows.html">TV Shows</a></li>
-     <li><a href="games.html">Games & Apps</a></li>
-     <li><a href="collections.html">Collections</a></li>
-     <li><a href="contact.html">Contact</a></li>
-   </ul>
- </nav>
-</header>
-<main>
- <section class="slideshow-container">
+ <header>
+   <nav>
+     <ul>
+       <li><a href="#">Movies</a></li>
+       <li><a href="#">TV Shows</a></li>
+       <li><a href="#">Games & Apps</a></li>
+       <li><a href="#">Contact</a></li>
+     </ul>
+   </nav>
+ </header>
+
+ <main>
+   <section class="banner">
+     </section>
+
+   <section class="slideshow">
+     </section>
+
+   <section class="about-us">
+     <h2>About Warner Bros.</h2>
+     <p>A brief description of Warner Bros.' history and mission.</p>
    </section>
- <section class="about-us">
-   <h2>About Warner Bros.</h2>
-   <p>Warner Bros A Power house in entertainment,has captivated audiences worldwide with beloved characters and block buster movies.</p>
- </section>
- <section class="social-media">
-   <h2>Follow Us</h2>
-   <a href="https://www.facebook.com/warnerbros/"><img src="facebook.png" alt="Facebook"></a>
-   <a href="https://twitter.com/warnerbros"><img src="twitter.png" alt="Twitter"></a>
-   <a href="https://www.instagram.com/warnerbros/"><img src="instagram.png" alt="Instagram"></a>
- </section>
-</main>
-<footer>
- <p>&copy; Warner Bros. All rights reserved.</p>
-</footer>
+
+   <section class="upcoming-movies">
+     <h2>Upcoming Movies</h2>
+     <div class="movie-grid">
+       </div>
+   </section>
+
+   <section class="social-media">
+     <h3>Follow Us</h3>
+     <ul>
+       <li><a href="#">Facebook</a></li>
+       <li><a href="#">Twitter</a></li>
+       <li><a href="#">Instagram</a></li>
+     </ul>
+   </section>
+ </main>
+
+ <footer>
+   <p>&copy; Warner Bros. 2024</p>
+ </footer>
 </body>
 </html>
+
 
